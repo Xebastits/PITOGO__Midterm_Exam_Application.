@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Go to product controller in root agad.
+Route::get('/', [ProductController::class, 'index']);
